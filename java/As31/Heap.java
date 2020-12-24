@@ -2,7 +2,7 @@ public class Heap {
 	public node[] d;
 	public int entry;//array d's length
 	
-	// ¼ø¼­´Â cost·Ñ minimum heapÀ» ¸¸µéµÇ edge¿¡ ´ëÇÑ Á¤º¸¸¦ ³Ö¾î ÁÖ¾î¾ß ÇÑ´Ù.
+	// ìˆœì„œëŠ” costë¡¤ minimum heapì„ ë§Œë“¤ë˜ edgeì— ëŒ€í•œ ì •ë³´ë¥¼ ë„£ì–´ ì£¼ì–´ì•¼ í•œë‹¤.
 	public Heap(int size) { //constructor 
 		d = new node[size+1];
 		entry = 0;
@@ -21,7 +21,7 @@ public class Heap {
 		node in = new node();
 		in.cost = x;
 		in.edge = pos - 1;
-		//d[0]À» ÃÊ±âÈ­ ÇÏÁö ¾ÊÀ¸¸é d[0].cost ¿¡ ´ëÇÑ ¿¬»êÀÌ ºÒ°¡´É ÇÏ´Ù.
+		//d[0]ì„ ì´ˆê¸°í™” í•˜ì§€ ì•Šìœ¼ë©´ d[0].cost ì— ëŒ€í•œ ì—°ì‚°ì´ ë¶ˆê°€ëŠ¥ í•˜ë‹¤.
 			
 		while ((d[pos/2].cost > x) && (pos != 1)) { //up from bottom to root, if parent is bigger
 			d[pos] = d[pos/2];
