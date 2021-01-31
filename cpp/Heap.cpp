@@ -51,7 +51,6 @@ int main(void) {
 	return 0;
 }
 
-// top-down method
 void MinHeap::Insertion(int n) {
 	int insert_pos;
 	
